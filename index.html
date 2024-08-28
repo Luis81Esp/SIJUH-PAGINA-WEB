@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header> 
+        <div>
+            <img class="logo" src="imagenes/Logo.png" alt="Logo de Alura Latam" >
+        </div>
+    </header>
+    <main class="main">
+    <section class="section-uno">
+        <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        <div>
+            <h6 class="informacion">⚠ Solo se aceptan letras minisculas y sin acentos,ni caracteres especiales.</h6>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+    </section>
+    <section class="section-dos">
+        <textarea class="mensaje" cols="20" rows="10"></textarea>
+        <div class="btn-div">
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="copyright-footer">
+            <a href="https://www.youtube.com/@AluraLatam" class="links-social"><img src="imagenes/youtube.png" alt="Youtube Alura Latam"></a>
+            <a href="https://app.aluracursos.com/formacion-programacion-primeros-pasos-grupo7-one" class="links-social"><img src="imagenes/alura.png" alt="Challengue Alura"></a>
+            <p class="copyright">✨Proyecto Realizado gracias a las enseñanzas de los cursos de Alura Latam✨</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
