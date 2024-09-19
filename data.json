@@ -1,0 +1,106 @@
+{
+  "clientes": [
+    {
+      "_id": "cliente_001",
+      "nombre": "Luis Fernández",
+      "telefono": "934567890",
+      "email": "luis.fernandez@gmail.com",
+      "direccion": "Miraflores, Lima",
+      "eventos_pasados": ["evento_001", "evento_002"]
+    },
+    {
+      "_id": "cliente_002",
+      "nombre": "María Vargas",
+      "telefono": "945678901",
+      "email": "maria.vargas@gmail.com",
+      "direccion": "San Borja, Lima",
+      "eventos_pasados": ["evento_003"]
+    }
+  ],
+  "consolas": [
+    {
+      "_id": "consola_001",
+      "tipo": "PS5",
+      "estado": "Disponible",
+      "fecha_ultimo_uso": "2024-09-11",
+      "eventos_utilizados": ["evento_001"]
+    },
+    {
+      "_id": "consola_002",
+      "tipo": "Realidad Virtual",
+      "estado": "Disponible",
+      "fecha_ultimo_uso": "2024-09-12",
+      "eventos_utilizados": ["evento_002", "evento_003"]
+    }
+  ],
+  "eventos": [
+    {
+      "_id": "evento_001",
+      "cliente_id": "cliente_001",
+      "fecha": "2024-09-10",
+      "ubicacion": "Miraflores, Lima",
+      "paquete": "paquete_001",
+      "consolas_alquiladas": ["consola_001"],
+      "personal_asignado": ["personal_001"],
+      "estado": "Completado"
+    },
+    {
+      "_id": "evento_002",
+      "cliente_id": "cliente_001",
+      "fecha": "2024-09-12",
+      "ubicacion": "San Borja, Lima",
+      "paquete": "paquete_002",
+      "consolas_alquiladas": ["consola_002"],
+      "personal_asignado": ["personal_002"],
+      "estado": "Completado"
+    }
+  ],
+  "paquetes": [
+    {
+      "_id": "paquete_001",
+      "nombre": "Paquete Básico",
+      "precio": 150,
+      "descripcion": "Incluye 2 consolas PS5 y 10 fotos digitales",
+      "items": {
+        "consolas": [
+          {
+            "tipo": "PS5",
+            "cantidad": 2
+          }
+        ],
+        "fotos": 10
+      }
+    },
+    {
+      "_id": "paquete_002",
+      "nombre": "Paquete Avanzado",
+      "precio": 250,
+      "descripcion": "Incluye consolas de realidad virtual y luces LED",
+      "items": {
+        "consolas": [
+          {
+            "tipo": "Realidad Virtual",
+            "cantidad": 2
+          }
+        ],
+        "luces_LED": 5
+      }
+    }
+  ],
+  "personal": [
+    {
+      "_id": "personal_001",
+      "nombre": "Laura Ramos",
+      "telefono": "987654321",
+      "rol": "Atención en eventos",
+      "eventos_asignados": ["evento_001"]
+    },
+    {
+      "_id": "personal_002",
+      "nombre": "José Delgado",
+      "telefono": "987654322",
+      "rol": "Atención en eventos",
+      "eventos_asignados": ["evento_002"]
+    }
+  ]
+}
